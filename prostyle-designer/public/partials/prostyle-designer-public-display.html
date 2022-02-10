@@ -11,14 +11,7 @@
  * @subpackage Prostyle_Designer/public/partials
  */
 ?>
-<?php
-$endpoint = 'db.php';
-if (file_exists($endpoint)):
-    include($endpoint);
-else:
-    die('404 Error');
-endif;
-?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -174,7 +167,7 @@ endif;
                         <?php foreach ($templates as $template): ?>
                             <div class="row template-row">
                                 <div class="col">
-                                    <img onclick="update_template(this.src, '<?php echo $template['color']; ?>')" class="template" src="../img/templates/<?php echo $template['image']; ?>" />
+                                    <!--<img onclick="update_template(this.src, '<?php echo $template['color']; ?>')" class="template" src="../img/templates/<?php echo $template['image']; ?>" />-->
                                 </div>
                             </div>
                         <?php endforeach; ?>
